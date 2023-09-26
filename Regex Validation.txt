@@ -1,0 +1,6 @@
+    @NotBlank(message = " ")
+    @Range(min = 1, max = 4, message = "Enter values between 1 and 4 only!!")
+    @Pattern(regexp = "^[a-zA-Z0-9]{7,15}$", message = "For Alpha Numerial ID")
+    @Pattern(regexp = "[A-Za-z0-9]+@[A-Za-z0-9]+\\.com",message = "Entered Email is Not Walid")
+   @Pattern(regexp="admin_scope|buadmin_scope|tpoleader_scope|tpouser_scope",  message = "Entered RoleType is Wrong")
+
